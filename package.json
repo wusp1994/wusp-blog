@@ -1,0 +1,23 @@
+{
+  "name": "wusp-blog",
+  "version": "1.0.0",
+  "description": "使用使用vuepress 搭建个人博客\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[C\u001b[C\u001b[C\u001b\u001b[3~\u001b[3~",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wusp1994/wusp-blog.git"
+  },
+  "keywords": [
+    "vuepress",
+    "blog"
+  ],
+  "author": "wushaopeng",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wusp1994/wusp-blog/issues"
+  },
+  "homepage": "https://github.com/wusp1994/wusp-blog#readme"
+}
