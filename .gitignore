@@ -1,0 +1,17 @@
+# npm
+package-lock.json
+node_modules
+
+# vscode
+.vscode
+
+# vuepress 
+dist
+
+# 撰写中
+todo
+
+# 剑指offer刷题笔记
+.idea
+
+# 前端知识体系
