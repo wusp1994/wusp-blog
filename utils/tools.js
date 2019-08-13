@@ -39,7 +39,7 @@ module.exports = {
                 }
             }
         })
-        // console.log(fileNames);
+        // console.log(fileNames,"====children-array");
         fileNames.sort();//排序
         return fileNames;
     },
@@ -50,7 +50,7 @@ module.exports = {
      * @param collapsable 是否可折叠(上下折叠)
      * @param sidebarDepth 嵌套的标题链接深度
      */
-    getSidebar : function(title,children = [''], collapsable = true, sidebarDepth = 1) {
+    getSidebar : function(title,children = [''], collapsable = true, sidebarDepth = 3) {
         let arr = [];
         arr.push({
             title,

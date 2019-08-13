@@ -6,7 +6,7 @@ module.exports = [
             {
                 text: 'javascript',
                 items: [
-                    {text: 'es6', link: ''},
+                    {text: 'es6', link: '/passages/array/'},
                     {text: 'vue', link: ''},
                     {text: 'react', link: ''},
                     {text: 'angular', link: ''},

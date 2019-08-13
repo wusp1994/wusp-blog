@@ -1,5 +1,6 @@
 const sidebarConfig = require('./sidebarConfig')
 const navConfig = require('./navConfig')
+// console.log(sidebarConfig,"=====sidebarConfig")
 
 module.exports = {
     //Git 仓库地址
@@ -11,5 +12,7 @@ module.exports = {
     //自动生成
     sidebar:sidebarConfig,
     //顶部导航
-    nav:navConfig
+    nav:navConfig,
+    //显示所有页面的标题链接
+    displayAllHeaders: true
 };
