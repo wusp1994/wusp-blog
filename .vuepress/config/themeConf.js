@@ -14,5 +14,5 @@ module.exports = {
     //顶部导航
     nav:navConfig,
     //显示所有页面的标题链接
-    displayAllHeaders: true
+    displayAllHeaders: false
 };

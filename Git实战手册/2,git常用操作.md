@@ -7,14 +7,24 @@ permalink: "git_steps"
 ::: warning
 git命令需要在git项目的目录下运行命令(windows下shift+右键此处打开命令)
 :::
-### (1)git本地文件夹的删除和添加
+## 拉取远程分支到本地
+```sh
+#情况一：目前本地还没拉代码，直接拉分支代码
+git clone -b <branchName> git@gitlab.yopoint.vip:ac/YoPointSwift.git
+#情况二：本地已经拉取了代码，想拉取远程某一分支的代码到本地
+git checkout -b ac_branch origin/ac_branch #当前分支上创建一个分支，拉取远程到本地（方式一）
+  # 如果报错 git fetch 同步仓库
+git fetch origin ac_branch:ac_branch  #拉取远程分支到本地(方式二)
+```
+## git本地文件夹的删除和添加
 ```sh
 #windows命令
 rm -r hello.py  #删除。注：文件和文件夹 都可以用 tab 键补全路径
 git add .       #添加到本地git
 git commit -m 'remove hello.py'  #提交到本地git
 ```
-### （2）git删除远程仓库的文件并用.gitignore忽略提交此文件
+## git删除远程仓库的文件
+>git删除远程仓库的文件,Bing用.gitignore忽略提交此文件
 我向远程仓库提交了target目录，发现没必要提交target目录。
 ```sh
 #windows命令
@@ -29,7 +39,7 @@ git commit -m "write .gitignore"
 git push origin master
 ```
 
-### （3）branch基本操作
+## branch基本操作
 ```sh
 #查看分支
 git branch -v #（查看本地库中的所有分支）
@@ -42,7 +52,7 @@ git checkout dev #（切换分支）
 git branch -d Chapater8 #删除本地分支
 git push origin --delete Chapater6   #删除远程分支Chapater6
 ```
-### （3）tag标签的常用操作
+## tag标签的常用操作
 ```sh
 #新建标签(打标签)，默认打在当前分支的最新提交的commit上的
 git tag v1.0.0 #新建标签，默认打在当前分支的最新提交的commit上的
@@ -58,7 +68,8 @@ git tag
 #查看标签信息
 git show <tagname>
 ```
-#### 操作标签，（ 本地删除，远程删除，推送到远端 ）
+## 操作标签
+（ 本地删除，远程删除，推送到远端 ）
 ```sh
 #删除标签
 git tag -d v0.1 #删除一个本地标签；
