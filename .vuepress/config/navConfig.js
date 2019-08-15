@@ -4,9 +4,9 @@ module.exports = [
         text: '核心技术',
         items: [
             {
-                text: 'javascript',
+                text: 'js基础',
                 items: [
-                    {text: 'es6', link: '/passages/array/'},
+                    {text: 'javascript', link: '/passages/javascript-datatype/'},
                     {text: 'vue', link: ''},
                     {text: 'react', link: ''},
                     {text: 'angular', link: ''},
