@@ -22,7 +22,7 @@ git tag
 git show <tagname>
 ```
 
-## 操作标签
+## 删除tag
 （ 本地删除，远程删除，推送到远端 ）
 ```sh
 #删除标签
@@ -36,6 +36,7 @@ git push origin :refs/tags/v0.9 #从远程删除。删除命令也是push，但�
 git push origin <tagname> #推送一个本地标签
 git push origin --tags    #推送全部未推送过的本地标签
 ```
+
 ## 根据tag回退版本修改bug
 步骤如下  
 ```sh
