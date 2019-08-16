@@ -15,6 +15,10 @@ git tag -a v1.0.0 -m "blablabla..." #指定标签信息
 git log --pretty=oneline --abbrev-commit  #查看提交历史
 git tag v1.0.0 <版本号>   #标签打在某次提交上
 
+#拉取tag 版本的新分支
+git checkout -b bugfix tagName
+
+
 #查看标签
 git tag
 
