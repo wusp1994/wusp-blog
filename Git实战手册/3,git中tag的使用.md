@@ -7,7 +7,7 @@ permalink: "git_tag"
 ## tag标签的常用操作
 (打tag ，查看tag， 查看tag详细信息)
 ```sh
-#新建标签(打标签)，默认打在当前分支的最新提交的commit上的
+#新建标签(打标签)，默认打在当前分支的最新提交的commit上的。注意：即使没有push到远端，也是最后一次提交commit
 git tag v1.0.0 #新建标签，默认打在当前分支的最新提交的commit上的
 git tag -a v1.0.0 -m "blablabla..." #指定标签信息
 
