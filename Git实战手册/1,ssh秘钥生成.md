@@ -6,6 +6,8 @@ permalink: "ssh_key_create"
 >在使用SSH链接的git项目中，SSH密钥允许您在计算机和git服务器之间建立安全连接。
 
 ## 1.检查是否存在SSH秘钥
+__linux 的秘钥 同样是这样可以通用—__
+.pub文件 是公钥，另外一个是 私钥
 ```sh
 # windows命令
 type %userprofile%\.ssh\id_rsa.pub //查看秘钥
@@ -28,3 +30,7 @@ Enter file in which to save the key (C:\Users\Administrator/.ssh/id_rsa):id_rsa_
 注意：
 如果不是采用默认的配置，需要在想要生成的目录下，执行生成秘钥命令
 :::
+## linux信任秘钥的修改
+```js
+~/.ssh/authorized_keys 这个目录下的添加或者修改就行了
+```

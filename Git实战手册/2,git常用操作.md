@@ -7,6 +7,16 @@ permalink: "git_steps"
 ::: warning
 git命令需要在git项目的目录下运行命令(windows下shift+右键此处打开命令)
 :::
+## Git回滚到某个commit
+```sh
+$ git reset --hard HEAD^         #回退到上个版本
+$ git reset --hard HEAD~3        #回退到前3次提交之前，以此类推，回退到n次提交之前
+$ git reset --hard commit_id     #退到/进到 指定commit的sha码
+
+#强推到远程：
+$ git push origin HEAD --force
+```
+
 ## 拉取远程分支到本地
 ```sh
 #情况一：目前本地还没拉代码，直接拉分支代码
@@ -51,34 +61,4 @@ git checkout dev #（切换分支）
 #删除分支
 git branch -d Chapater8 #删除本地分支
 git push origin --delete Chapater6   #删除远程分支Chapater6
-```
-## tag标签的常用操作
-```sh
-#新建标签(打标签)，默认打在当前分支的最新提交的commit上的
-git tag v1.0.0 #新建标签，默认打在当前分支的最新提交的commit上的
-git tag -a v1.0.0 -m "blablabla..." #指定标签信息
-
-#打标签到某个commit上
-git log --pretty=oneline --abbrev-commit  #查看提交历史
-git tag v1.0.0 <版本号>   #标签打在某次提交上
-
-#查看标签
-git tag
-
-#查看标签信息
-git show <tagname>
-```
-## 操作标签
-（ 本地删除，远程删除，推送到远端 ）
-```sh
-#删除标签
-git tag -d v0.1 #删除一个本地标签；
-
-#远程删除（本地删除，再远端删除）
-git tag -d v0.9 #删除一个本地标签；
-git push origin :refs/tags/v0.9 #从远程删除。删除命令也是push，但是格式需要是这样
-
-#推送远端
-git push origin <tagname> #推送一个本地标签
-git push origin --tags    #推送全部未推送过的本地标签
 ```
