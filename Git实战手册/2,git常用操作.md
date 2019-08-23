@@ -8,6 +8,21 @@ permalink: "git_steps"
 git命令需要在git项目的目录下运行命令(windows下shift+右键此处打开命令)
 :::
 ## Git回滚到某个commit
+
+:::warning
+不推荐====> 回退命令 git reset --hard   
+推荐=====>  git checkout -b bugfix commitID 在某次提交上新建分支，修复bug完成，分支合并
+:::
+推荐
+```sh
+
+git checkout -b bugfix commitID
+# 分支修复bug,修复完成后，切回主干分支合并就行了
+git checkout master #切换到主干上
+git merge bugfix    #合并bug的分支到主干
+```
+
+不推荐
 ```sh
 $ git reset --hard HEAD^         #回退到上个版本
 $ git reset --hard HEAD~3        #回退到前3次提交之前，以此类推，回退到n次提交之前
@@ -58,7 +73,16 @@ git branch -a #(查看所有分支)
 #创建分支
 git branch dev #(创建一个新的分支)
 git checkout dev #（切换分支）
+git checkout -b new_branch #合并命令
+ git checkout -b new_branch <tagName>/<commit id> #新建某个tag或者commit版本的新分支
+# 拉取远程分支到本地
+  #情况一：目前本地还没拉代码，直接拉分支代码
+git clone -b <branchName> git@gitlab.yopoint.vip:ac/YoPointSwift.git
+  #情况二：本地已经拉取了代码，想拉取远程某一分支的代码到本地
+git checkout -b ac_branch origin/ac_branch #当前分支上创建一个分支，拉取远程到本地（方式一）
+
 #删除分支
 git branch -d Chapater8 #删除本地分支
 git push origin --delete Chapater6   #删除远程分支Chapater6
+
 ```
