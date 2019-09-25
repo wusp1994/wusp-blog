@@ -75,7 +75,6 @@ module.exports = [
             },
         ]
     },
-
     {
         text: '编程思想',
         items: [
@@ -106,6 +105,17 @@ module.exports = [
                     {text: '3，李氏替换原则', link: ''},
                     {text: '4，接口独立原则', link: ''},
                     {text: '5，依赖倒置原则', link: ''},
+                ]
+            },
+        ]
+    },
+    {
+        text: '服务器相关',
+        items: [
+            {
+                items: [
+                    {text: 'nginx', link: '/passages/nginx/'},
+                    {text: 'tomcat', link: '/passages/nginx/'},
                 ]
             },
         ]

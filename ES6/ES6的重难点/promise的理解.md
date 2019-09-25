@@ -5,6 +5,24 @@ permalink: "Promise"
 ---
 
 ## `Promise`的含义
+promise 是异步编程的一种解决方案,比传统的回调函数和事件,更加合理和强大.最早由社区提出和实现,后加入了es6标准,原生提供了 `Promise` 对象.
+
+`Promise`对象的两个特点:
+1)对象的状态不受外界影响.Promise 对象代表了一个异步操作,有三种状态:`pending` (进行中).`fulfilled`(已成功) 和 `rejected`(已失败). 只有异步操作的结果,可以决定当前状态是哪一种状态,任何其他操作都无法改变这个状态.promise的英文  承诺  就 代表这个意思.
+
+2)一旦状态改变,就不会再变,任何时候都可以得到这个结果. `Promise` 对象的状态改变,只有两种可能:`pending`(进行中)->`fulfilled`(已成功)  `pending`(进行中)->`rejected`(已失败).只要着两种情况发生了,状态就凝固了,不会再变了,会一直保持这个结果,这时 就称为 resolved (已定型).
+与事件不同的是:如果改变已经发生了,再怎么 对 Promiese 对象添加回调函数,也会立即得到这个结果.事件则是,错过了再去监听,得到的结果是不同的.  
+
+优点:
+1,有了 Promise 对象,就可以将 异步操作 以同步操作的流程 表达出来,避免层层嵌套的回调函数.
+2,Promise 对象提供统一的接口,使得控制异步操作更加容易.
+缺点:
+1,无法取消 `Promise` 一旦建立就会立即执行,无法中途取消.
+2,如果不设置回调函数,`Promise`内部抛出的错误,不会反应到外部.
+3,当处于 `pending` 状态时,无法得知目前进展打牌哪一个阶段,(刚开始还是即将完成)
+
+如果某些事件不断反复发生,一般来说,使用 Stream 模式比 部署 Promise 更好.
+
 
 ## `Promise`的基本用法
 ES6 规定，`Promise`对象是一个构造函数，用来生成Promise实例。
@@ -33,7 +51,10 @@ promise.then(function(value){
   // failure
 })
 ```
-`then`方法可以接受两个回调函数作为参数.第一个回调函数是 `Promise`对象的状态变为 `resolved`时调用,第二回调函数是`Promise`对象的状态变为`rejected`时调用.其中第二个函数是可选的.这两个函数都接收`Promise`对象传出的值作为参考.
+`then`方法可以接受两个回调函数作为参数.
+第一个回调函数是 `Promise`对象的状态变为 `resolved`时调用,
+第二回调函数是`Promise`对象的状态变为`rejected`时调用.
+其中第二个函数是可选的.这两个函数都接收`Promise`对象传出的值作为参考.
 
 以下举例
 ```js
@@ -90,6 +111,9 @@ function loadImageAsync(url){
 
 2,promise 对象实现的 Ajax 操作
 ```js
+/**
+对XMLHttpRequest 对象的封装,用于发出一个针对 JSON 数据的 HTTP 请求,并返回一个 Promise 对象,.
+*/
 const getJSON = function(url){
   const promise = new Promise(function(resolve,reject){
     const handler = function(){
@@ -118,4 +142,9 @@ getJSON("/posts.json").then(function(json){
 },function(error){
   console.error("出错了",error);
 })
+```
+在getJSON()内部中,resolve() 和reject() 调用时,都带有参数,他们的参数会被传递给回调函数.
+reject()的参数 通常是 Error 对象的实例,表示抛出的错误;resolve()的参数除了正常值,还可能是另一个Promise 实例.
+比如
+```js
 ```
