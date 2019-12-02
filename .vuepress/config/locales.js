@@ -1,6 +1,6 @@
 // 多语言配置配置
 module.exports = {
-  '/': {
+  './': {
     lang: 'zh-CN',
     title: ' 一腔诗意',
     description: '种一棵树最好的时间是十年前，其次就是现在。',

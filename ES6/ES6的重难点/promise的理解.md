@@ -3,23 +3,72 @@ title: "Promise"
 date: "2019-08-27"
 permalink: "Promise"
 ---
+## 前言
+异步：同时进行多种操作。  
+------  优点：性能好，效率高，一段代码阻塞，不会影响其他代码。   
+------  缺点：写书看起来复杂，回调地狱。
+
+缺点比如说：页面获取数据且层层依赖，如下代码层层嵌套，极度复杂的时候不好维护
+```js
+ajax('/banners', function (banner_data){
+  ajax('/hotItems', function (hotitem_data){
+    ajax('/slides', function (slide_data){
+      ajax('/slides', function (slide_data){
+
+      }, function (){
+        alert('读取失败');
+      });
+    }, function (){
+      alert('读取失败');
+    });
+  }, function (){
+    alert('读取失败');
+  });
+}, function (){
+  alert('读取失败');
+});
+```
+
+同步：同时只能做一件事。  
+------  优点：复杂代码看起来也会有条理，易读   
+------  缺点：性能差，容易造成代码阻塞
+
+优点：还是如上例子,易于维护，但是前面执行完才能有下面的。
+```js
+let banner_data=ajax_async('/banners');
+let hotitem_data=ajax_async('/hotItems');
+let slide_data=ajax_async('/slides');
+let banner_data=ajax_async('/banners');
+```
+
+所以出现了Promise 用同步一样的方式，来书写异步代码
+
+```js
+Promise.all([$.ajax(),$ajax()]).then(res=>{
+    //对了
+},err=>{
+  //错了
+})
+
+```
+
 
 ## `Promise`的含义
-promise 是异步编程的一种解决方案,比传统的回调函数和事件,更加合理和强大.最早由社区提出和实现,后加入了es6标准,原生提供了 `Promise` 对象.
+##### `promise 用同步（书写方便）的方式写异步代码（性能好），集成异步和同步的优点，是异步编程的一种解决方案,解决了回调地狱问题.`
 
-`Promise`对象的两个特点:
-1)对象的状态不受外界影响.Promise 对象代表了一个异步操作,有三种状态:`pending` (进行中).`fulfilled`(已成功) 和 `rejected`(已失败). 只有异步操作的结果,可以决定当前状态是哪一种状态,任何其他操作都无法改变这个状态.promise的英文  承诺  就 代表这个意思.
+`Promise`对象的两个特点:  
+- 1)对象的状态不受外界影响.Promise 对象代表了一个异步操作,有三种状态:`pending` (进行中).`fulfilled`(已成功) 和 `rejected`(已失败). 只有异步操作的结果,可以决定当前状态是哪一种状态,任何其他操作都无法改变这个状态.promise的英文  承诺  就 代表这个意思.
 
-2)一旦状态改变,就不会再变,任何时候都可以得到这个结果. `Promise` 对象的状态改变,只有两种可能:`pending`(进行中)->`fulfilled`(已成功)  `pending`(进行中)->`rejected`(已失败).只要着两种情况发生了,状态就凝固了,不会再变了,会一直保持这个结果,这时 就称为 resolved (已定型).
+- 2)一旦状态改变,就不会再变,任何时候都可以得到这个结果. `Promise` 对象的状态改变,只有两种可能:`pending`(进行中)->`fulfilled`(已成功)  `pending`(进行中)->`rejected`(已失败).只要着两种情况发生了,状态就凝固了,不会再变了,会一直保持这个结果,这时 就称为 resolved (已定型).
 与事件不同的是:如果改变已经发生了,再怎么 对 Promiese 对象添加回调函数,也会立即得到这个结果.事件则是,错过了再去监听,得到的结果是不同的.  
 
-优点:
-1,有了 Promise 对象,就可以将 异步操作 以同步操作的流程 表达出来,避免层层嵌套的回调函数.
-2,Promise 对象提供统一的接口,使得控制异步操作更加容易.
-缺点:
-1,无法取消 `Promise` 一旦建立就会立即执行,无法中途取消.
-2,如果不设置回调函数,`Promise`内部抛出的错误,不会反应到外部.
-3,当处于 `pending` 状态时,无法得知目前进展打牌哪一个阶段,(刚开始还是即将完成)
+优点:  
+- 1,同步（书写方便）的方式写异步代码（性能好）,避免层层嵌套的回调函数.
+- 2,Promise 对象提供统一的接口,使得控制异步操作更加容易.
+缺点:  
+- 1,无法取消 `Promise` 一旦建立就会立即执行,无法中途取消.
+- 2,如果不设置回调函数,`Promise`内部抛出的错误,不会反应到外部.
+- 3,当处于 `pending` 状态时,无法得知目前进展打牌哪一个阶段,(刚开始还是即将完成)
 
 如果某些事件不断反复发生,一般来说,使用 Stream 模式比 部署 Promise 更好.
 
@@ -69,6 +118,19 @@ timeout(100).then((value)=>{
 ```
 上面的代码. timeout()返回一个 promise 实例,表示一段时间以后才会发生的结果.过了指定时间(参数`ms`)以后,`Promise` 实例的状态变为 `resolved` ,就会触发 `then` 方法绑定的回调函数.
 
+### .all()
+高版本的jquery已经对promise进行了封装
+```JS
+Promise.all([
+  $.ajax({url:'data/arr.txt',dataType:'json'}),
+  $.ajax({url:'data/json.txt',dataType:'json'})
+]).then(res=>{
+  //取值时候按顺序取值
+  let [arr,json] = res;
+},err=>{
+  console.log(err)
+})
+```
 ### 特点一:Promise 新建后就会立即执行
 ```js
 let promise = new Promise(function(resolve,reject){
