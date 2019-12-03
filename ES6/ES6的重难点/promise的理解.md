@@ -131,6 +131,9 @@ Promise.all([
   console.log(err)
 })
 ```
+:::warning  
+同时读取几个ajax数据可用。但是步骤读取数据依赖前一步数据，就需要用到generator
+:::
 ### 特点一:Promise 新建后就会立即执行
 ```js
 let promise = new Promise(function(resolve,reject){
