@@ -5,8 +5,9 @@ node_modules
 # vscode
 .vscode
 
-# vuepress 
+# vuepress
 dist
+dist.zip
 
 # 撰写中
 todo
