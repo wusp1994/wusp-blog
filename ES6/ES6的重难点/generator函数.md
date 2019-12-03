@@ -8,6 +8,13 @@ permalink: "generator"
 - 第一次使用next()相当于启动整个generator函数的开关，  
 - 接下来使用一次，相当于触发一次 yield 向后走
 
+
+|异步操作方式|适用场景|
+|-|-|
+|generator|带逻辑的异步,简易程度 generator>回调>promise|
+|promise|没有依赖逻辑的异步，一次性获取很多数据|
+|回调|处理逻辑异步操作比promise好用点，传统方式|
+
 ### 基础用法
  使用yield：暂停函数，等待next()触发
  ```js
@@ -75,5 +82,66 @@ function* show() {
     console.log(res1,'首次启动') //{value:'yield1',done:false}
     console.log(res2,'第一个yield')//{value:'yield2',done:false}
     console.log(res3,'第二个yield')//{value:undefined,done:true}
+```
+
+### generator应用
+//多个ajax之间有依赖，逻辑判断
+```js
+
+// json.txt: {
+//   "user":"wusp",
+//   "pass":1234
+// }
+  /**
+   * 使用封装函数 runner(),能直接获取 yield 返回的ajax中响应内容
+   */
+  runner( function* show() {
+
+    let json = yield $.ajax({url : '../data/json.txt',dataType:"json"});//获得第一个next()传参
+    let user = json.user;
+    let pass = json.pass;
+
+    console.log(json)
+
+    if(user === "wusp" && pass === 1234){
+      let text = yield $.ajax({url : '../data/text.txt',dataType:"json"});
+      alert(text)
+    }else{
+      alert("用户名不对")
+    }
+  });
+
+  function runner(_gen){
+    return new Promise((resolve, reject)=>{
+      var gen=_gen();
+
+      _next();
+      function _next(_last_res){
+        var res=gen.next(_last_res);
+
+        if(!res.done){
+          var obj=res.value;
+
+          if(obj.then){
+            obj.then((res)=>{
+              _next(res);
+            }, (err)=>{
+              reject(err);
+            });
+          }else if(typeof obj=='function'){
+            if(obj.constructor.toString().startsWith('function GeneratorFunction()')){
+              runner(obj).then(res=>_next(res), reject);
+            }else{
+              _next(obj());
+            }
+          }else{
+            _next(obj);
+          }
+        }else{
+          resolve(res.value);
+        }
+      }
+    });
+  }
 
 ```
