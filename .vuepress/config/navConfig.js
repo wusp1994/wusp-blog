@@ -28,6 +28,7 @@ module.exports = [
             {
                 // text: '核心API',
                 items: [
+                    {text: '核心知识', link: '/passages/npm/'},
                     {text: 'express', link: ''},
                     {text: '核心API', link: ''},
                     {text: 'koa', link: ''},
