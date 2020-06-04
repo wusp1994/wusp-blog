@@ -18,7 +18,7 @@ module.exports = {
     "/服务器相关/": [
         tools.getSidebar('nginx', tools.formatSidebarChildren(tools.docsPath + "/服务器相关/nginx"), true),
     ],
-    "/nodeJs/": [
+    "/nodeJS/": [
         tools.getSidebar('基础知识', tools.formatSidebarChildren(tools.docsPath + "/nodeJS/基础知识"), true),
     ],
     // 一定要放在最后！！！
