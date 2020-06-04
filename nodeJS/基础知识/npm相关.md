@@ -4,8 +4,17 @@ date: "2019-12-04"
 permalink: "npm"
 ---
 ## npm install
-**npm install --save 、--save-dev 、-D、-S 的区别与NODE_ENV的配置**
+**npm install --save 、--save-dev 、-D、-S 的区别
  下列用 <==> 表示等价于
+
+```shell
+ #安装具体版本
+npm install --save webpack@1.x.x  --registry=https://registry.npm.taobao.org
+#快速根据json文件安装包
+npm install --registry=https://registry.npm.taobao.org
+```
+
+
 
  ```sh
  #使用 `npm i` 安装package.json里的依赖时，两部分的包都会pull下来
@@ -27,9 +36,29 @@ npm run start <=> npm start # 对应"scripts"里的"start"命令
 
 ![Alt text](./npmImg/page.jpg)
 
-## process.env.NODE_ENV的应用
+## 环境变量（NODE_ENV）设置
 
-### vue-cli 3中
+### 常规使用
+
+```js
+"scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+        // 在Mac和Linux上使用export， 在windows上export要换成set
+    "start": "set NODE_ENV='development' && node app.js" 
+},
+```
+
+通过`set NODE_ENV='development'` 的方式，设置当前运行的环境，然后配置文件中，会取值加载不同的配置。
+
+取值方式如下：
+
+```js
+console.log(process.env.NODE_ENV); // development
+```
+
+###  特殊场景：
+
+**vue-cli 3中**
 
 根目录下配置文件
 
