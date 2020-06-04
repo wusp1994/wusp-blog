@@ -21,6 +21,12 @@ module.exports = {
     "/nodeJS/": [
         tools.getSidebar('基础知识', tools.formatSidebarChildren(tools.docsPath + "/nodeJS/基础知识"), true),
     ],
+    "/VUE/": [
+        tools.getSidebar('VUE', tools.formatSidebarChildren(tools.docsPath + "/VUE"), true),
+    ],
+    "/React/": [
+        tools.getSidebar('React', tools.formatSidebarChildren(tools.docsPath + "/React"), true),
+    ],
     // 一定要放在最后！！！
     // 根目录下的 sidebar, 对于所有未匹配到的都会应用该 sidebar
     // '/': [''] // 此处选择禁用

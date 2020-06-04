@@ -7,8 +7,8 @@ module.exports = [
                 text: 'js基础',
                 items: [
                     {text: 'javascript', link: '/passages/javascript-datatype/'},
-                    {text: 'vue', link: ''},
-                    {text: 'react', link: ''},
+                    {text: 'VUE', link: '/passages/VUE/'},
+                    {text: 'React', link: '/passages/React/'},
                     {text: 'angular', link: ''},
                 ]
             },
