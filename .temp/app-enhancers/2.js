@@ -1,0 +1,1 @@
+export { default } from "E:\\wushaopengCode\\博客\\wusp-blog\\.vuepress\\plugins\\my-loader\\loader.js"
