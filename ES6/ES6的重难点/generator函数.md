@@ -4,9 +4,23 @@ date: "2019-08-27"
 permalink: "generator"
 ---
 ## generator是什么？
->generator是异步操作的方式之一。无法像普通函数一样调用，需要使用 generator 对象的next()启动，   
-- 第一次使用next()相当于启动整个generator函数的开关，  
+>generator是异步操作的方式之一。
+>
+>无法像普通函数一样调用，需要使用 generator 对象的next()启动，   
+>
+>- 第一次使用next()相当于启动整个generator函数的开关，  
 - 接下来使用一次，相当于触发一次 yield 向后走
+
+>ES6以前：
+>
+>​			回调函数（callback ）: nodejs express 中常用，ajax 中常用。
+>
+>ES6:  
+>
+>promise 对象：nodejs 最早有 bluebird,（promise的雏形），axios中常用。
+>
+>generator函数：nodejs koa框架使用率很高。
+
 
 
 |异步操作方式|适用场景|
@@ -16,6 +30,7 @@ permalink: "generator"
 |回调|处理逻辑异步操作比promise好用点，传统方式|
 
 ### 基础用法
+
  使用yield：暂停函数，等待next()触发
  ```js
  //多种声明方式
