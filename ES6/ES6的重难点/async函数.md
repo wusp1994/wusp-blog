@@ -7,20 +7,33 @@ permalink: "async function"
 用同步的方式处理异步操作的一种解决方案。
 Async - 定义异步函数 `(async function someName(){...})`
 
-- 自动把函数转换为 Promise,必返回一个promise对象，即使你返回的是其他对象。
-- 当调用异步函数时，函数返回值会被 resolve 处理
-- 异步函数内部可以使用 await
+- 必返回一个promise对象，如果异步函数中返回的是其他对象，async会通过Promise.resolve将其
+封装为一个promise对象。
+- Async函数内部可以使用 await，用来暂停(只有跟promise时候才会阻塞)当前函数的执行。
 
-Await - 暂停异步函数的执行 (var result = await someAsyncCall();)
+
+Await - 暂停异步函数的执行 `var result = await someAsyncCall() `
 
 - 当使用后面跟Promise对象时，`await`等待Promise完成，并返回Promise的结果
-- `await` 后面跟正常表达式会立即执行
-- await只能用在 async 函数中
+- `await` 后面跟**正常表达式会立即执行**
+- await只能用在 async 函数中.
 
 
 ## 使用async 处理异步任务
+案例一：async函数获取请求
+>axios 请求返回的是一个promise 对象，为异步操作.当请求完成后往下执行，
+>await 返回promise结果，代替回调和promise,完成异步操作。
 
-案例：async函数读取文件，nodeJs 中读取多个文件为异步操作
+```js
+function login (){ 
+	return new Promise()
+}
+async handleLogin(){
+    let res = await login();
+}
+```
+
+案例二：async函数读取文件，nodeJs 中读取多个文件为异步操作
 ```js
 const fs = require("fs");
 const read = function(fileName){
@@ -35,7 +48,8 @@ const read = function(fileName){
     });
 };
 
-//基于上面的async的特点，我们会用到异常捕获机制，学过java的都知道，java中有异常捕获try...catch...
+//基于上面的async的特点，我们会用到异常捕获机制，
+//学过java的都知道，java中有异常捕获try...catch...
 async function readByAsync(){
   let a1;
       let a2;
