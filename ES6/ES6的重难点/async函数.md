@@ -6,7 +6,8 @@ permalink: "async function"
 ## 什么是 Async/Await？
 >ES7:  async/await语法：针对generator的封装，当前最常用的异步语法，nodejs koa2 完全使用该语法。
 
-用同步的方式处理异步操作的一种解决方案。
+用同步的方式处理异步操作的一种解决方案。  
+
 Async - 定义异步函数 `(async function someName(){...})`
 
 - 必返回一个promise对象，如果异步函数中返回的是其他对象，async会通过Promise.resolve将其
