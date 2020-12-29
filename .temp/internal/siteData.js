@@ -17,7 +17,7 @@ export const siteData = {
       },
       "regularPath": "/ES6/ES6%E7%9A%84%E9%87%8D%E9%9A%BE%E7%82%B9/async%E5%87%BD%E6%95%B0.html",
       "relativePath": "ES6/ES6的重难点/async函数.md",
-      "key": "v-aad5aab0",
+      "key": "v-45670e0d",
       "path": "/passages/async function/",
       "headers": [
         {
@@ -29,50 +29,19 @@ export const siteData = {
           "level": 2,
           "title": "使用async 处理异步任务",
           "slug": "使用async-处理异步任务"
-        }
-      ],
-      "lastUpdated": "2019-12-4 19:30:24"
-    },
-    {
-      "title": "generator函数",
-      "frontmatter": {
-        "title": "generator函数",
-        "date": "2019-08-27",
-        "permalink": "/passages/generator",
-        "commentid": "generator"
-      },
-      "regularPath": "/ES6/ES6%E7%9A%84%E9%87%8D%E9%9A%BE%E7%82%B9/generator%E5%87%BD%E6%95%B0.html",
-      "relativePath": "ES6/ES6的重难点/generator函数.md",
-      "key": "v-769e37f0",
-      "path": "/passages/generator/",
-      "headers": [
+        },
         {
           "level": 2,
-          "title": "generator是什么？",
-          "slug": "generator是什么？"
+          "title": "使用await阻塞循环",
+          "slug": "使用await阻塞循环"
         },
         {
           "level": 3,
-          "title": "基础用法",
-          "slug": "基础用法"
-        },
-        {
-          "level": 3,
-          "title": "yield传参",
-          "slug": "yield传参"
-        },
-        {
-          "level": 3,
-          "title": "yield返回",
-          "slug": "yield返回"
-        },
-        {
-          "level": 3,
-          "title": "generator应用",
-          "slug": "generator应用"
+          "title": "在接下来的几节中，我们将研究await 如何影响forEach、map和filter。",
+          "slug": "在接下来的几节中，我们将研究await-如何影响foreach、map和filter。"
         }
       ],
-      "lastUpdated": "2019-12-3 14:42:38"
+      "lastUpdated": "2020-7-8 10:00:16"
     },
     {
       "title": "Promise",
@@ -84,7 +53,7 @@ export const siteData = {
       },
       "regularPath": "/ES6/ES6%E7%9A%84%E9%87%8D%E9%9A%BE%E7%82%B9/promise%E7%9A%84%E7%90%86%E8%A7%A3.html",
       "relativePath": "ES6/ES6的重难点/promise的理解.md",
-      "key": "v-cf255942",
+      "key": "v-7446e204",
       "path": "/passages/Promise/",
       "headers": [
         {
@@ -126,6 +95,109 @@ export const siteData = {
       "lastUpdated": "2019-12-3 10:21:22"
     },
     {
+      "title": "对象的操作",
+      "frontmatter": {
+        "title": "对象的操作",
+        "date": "2019-08-15",
+        "permalink": "/passages/object-operation",
+        "commentid": "object-operation"
+      },
+      "regularPath": "/ES6/%E5%AF%B9%E8%B1%A1/2,%E5%AF%B9%E8%B1%A1%E7%9A%84%E6%93%8D%E4%BD%9C.html",
+      "relativePath": "ES6/对象/2,对象的操作.md",
+      "key": "v-7b14fa39",
+      "path": "/passages/object-operation/",
+      "headers": [
+        {
+          "level": 2,
+          "title": "循环对象",
+          "slug": "循环对象"
+        },
+        {
+          "level": 2,
+          "title": "向对象中增加属性",
+          "slug": "向对象中增加属性"
+        },
+        {
+          "level": 2,
+          "title": "删除对象的属性",
+          "slug": "删除对象的属性"
+        }
+      ],
+      "lastUpdated": "2019-8-23 19:23:35"
+    },
+    {
+      "title": "generator函数",
+      "frontmatter": {
+        "title": "generator函数",
+        "date": "2019-08-27",
+        "permalink": "/passages/generator",
+        "commentid": "generator"
+      },
+      "regularPath": "/ES6/ES6%E7%9A%84%E9%87%8D%E9%9A%BE%E7%82%B9/generator%E5%87%BD%E6%95%B0.html",
+      "relativePath": "ES6/ES6的重难点/generator函数.md",
+      "key": "v-2bef926d",
+      "path": "/passages/generator/",
+      "headers": [
+        {
+          "level": 2,
+          "title": "generator是什么？",
+          "slug": "generator是什么？"
+        },
+        {
+          "level": 3,
+          "title": "基础用法",
+          "slug": "基础用法"
+        },
+        {
+          "level": 3,
+          "title": "yield传参",
+          "slug": "yield传参"
+        },
+        {
+          "level": 3,
+          "title": "yield返回",
+          "slug": "yield返回"
+        },
+        {
+          "level": 3,
+          "title": "generator应用",
+          "slug": "generator应用"
+        }
+      ],
+      "lastUpdated": "2020-7-6 19:50:33"
+    },
+    {
+      "title": "对象的转换",
+      "frontmatter": {
+        "title": "对象的转换",
+        "date": "2019-08-15",
+        "permalink": "/passages/object-switch",
+        "commentid": "object-switch"
+      },
+      "regularPath": "/ES6/%E5%AF%B9%E8%B1%A1/3,%E5%AF%B9%E8%B1%A1%E7%9A%84%E8%BD%AC%E6%8D%A2.html",
+      "relativePath": "ES6/对象/3,对象的转换.md",
+      "key": "v-7e8a5381",
+      "path": "/passages/object-switch/",
+      "headers": [
+        {
+          "level": 2,
+          "title": "对象转数组",
+          "slug": "对象转数组"
+        },
+        {
+          "level": 2,
+          "title": "数组转对象",
+          "slug": "数组转对象"
+        },
+        {
+          "level": 2,
+          "title": "JSON转换",
+          "slug": "json转换"
+        }
+      ],
+      "lastUpdated": "2019-8-23 19:23:35"
+    },
+    {
       "title": "对象的创建",
       "frontmatter": {
         "title": "对象的创建",
@@ -135,7 +207,7 @@ export const siteData = {
       },
       "regularPath": "/ES6/%E5%AF%B9%E8%B1%A1/1,%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%88%9B%E5%BB%BA.html",
       "relativePath": "ES6/对象/1,对象的创建.md",
-      "key": "v-145cfea4",
+      "key": "v-e6ab116e",
       "path": "/passages/object-create/",
       "headers": [
         {
@@ -167,104 +239,6 @@ export const siteData = {
       "lastUpdated": "2019-8-23 19:23:35"
     },
     {
-      "title": "函数的声明",
-      "frontmatter": {
-        "title": "函数的声明",
-        "date": "2019-08-15",
-        "permalink": "/passages/function-create",
-        "commentid": "function-create"
-      },
-      "regularPath": "/ES6/%E5%87%BD%E6%95%B0/1%EF%BC%8C%E5%87%BD%E6%95%B0%E7%9A%84%E5%A3%B0%E6%98%8E.html",
-      "relativePath": "ES6/函数/1，函数的声明.md",
-      "key": "v-d1e31628",
-      "path": "/passages/function-create/",
-      "headers": [
-        {
-          "level": 2,
-          "title": "1，函数式声明",
-          "slug": "_1，函数式声明"
-        },
-        {
-          "level": 2,
-          "title": "2,函数表达式声明",
-          "slug": "_2-函数表达式声明"
-        },
-        {
-          "level": 2,
-          "title": "3,条件中的函数声明",
-          "slug": "_3-条件中的函数声明"
-        },
-        {
-          "level": 2,
-          "title": "4,匿名函数",
-          "slug": "_4-匿名函数"
-        }
-      ],
-      "lastUpdated": "2019-8-23 19:23:35"
-    },
-    {
-      "title": "对象的操作",
-      "frontmatter": {
-        "title": "对象的操作",
-        "date": "2019-08-15",
-        "permalink": "/passages/object-operation",
-        "commentid": "object-operation"
-      },
-      "regularPath": "/ES6/%E5%AF%B9%E8%B1%A1/2,%E5%AF%B9%E8%B1%A1%E7%9A%84%E6%93%8D%E4%BD%9C.html",
-      "relativePath": "ES6/对象/2,对象的操作.md",
-      "key": "v-02c78194",
-      "path": "/passages/object-operation/",
-      "headers": [
-        {
-          "level": 2,
-          "title": "循环对象",
-          "slug": "循环对象"
-        },
-        {
-          "level": 2,
-          "title": "向对象中增加属性",
-          "slug": "向对象中增加属性"
-        },
-        {
-          "level": 2,
-          "title": "删除对象的属性",
-          "slug": "删除对象的属性"
-        }
-      ],
-      "lastUpdated": "2019-8-23 19:23:35"
-    },
-    {
-      "title": "对象的转换",
-      "frontmatter": {
-        "title": "对象的转换",
-        "date": "2019-08-15",
-        "permalink": "/passages/object-switch",
-        "commentid": "object-switch"
-      },
-      "regularPath": "/ES6/%E5%AF%B9%E8%B1%A1/3,%E5%AF%B9%E8%B1%A1%E7%9A%84%E8%BD%AC%E6%8D%A2.html",
-      "relativePath": "ES6/对象/3,对象的转换.md",
-      "key": "v-063cdadc",
-      "path": "/passages/object-switch/",
-      "headers": [
-        {
-          "level": 2,
-          "title": "对象转数组",
-          "slug": "对象转数组"
-        },
-        {
-          "level": 2,
-          "title": "数组转对象",
-          "slug": "数组转对象"
-        },
-        {
-          "level": 2,
-          "title": "JSON转换",
-          "slug": "json转换"
-        }
-      ],
-      "lastUpdated": "2019-8-23 19:23:35"
-    },
-    {
       "title": "js判断数据类型",
       "frontmatter": {
         "title": "js判断数据类型",
@@ -274,7 +248,7 @@ export const siteData = {
       },
       "regularPath": "/ES6/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/0.js%E5%88%A4%E6%96%AD%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B.html",
       "relativePath": "ES6/数据类型/0.js判断数据类型.md",
-      "key": "v-6da5682a",
+      "key": "v-5c5f4960",
       "path": "/passages/javascript-dataType/",
       "headers": [
         {
@@ -316,6 +290,78 @@ export const siteData = {
       "lastUpdated": "2019-8-15 18:13:36"
     },
     {
+      "title": "函数的声明",
+      "frontmatter": {
+        "title": "函数的声明",
+        "date": "2019-08-15",
+        "permalink": "/passages/function-create",
+        "commentid": "function-create"
+      },
+      "regularPath": "/ES6/%E5%87%BD%E6%95%B0/1%EF%BC%8C%E5%87%BD%E6%95%B0%E7%9A%84%E5%A3%B0%E6%98%8E.html",
+      "relativePath": "ES6/函数/1，函数的声明.md",
+      "key": "v-167f7891",
+      "path": "/passages/function-create/",
+      "headers": [
+        {
+          "level": 2,
+          "title": "1，函数式声明",
+          "slug": "_1，函数式声明"
+        },
+        {
+          "level": 2,
+          "title": "2,函数表达式声明",
+          "slug": "_2-函数表达式声明"
+        },
+        {
+          "level": 2,
+          "title": "3,条件中的函数声明",
+          "slug": "_3-条件中的函数声明"
+        },
+        {
+          "level": 2,
+          "title": "4,匿名函数",
+          "slug": "_4-匿名函数"
+        }
+      ],
+      "lastUpdated": "2019-8-23 19:23:35"
+    },
+    {
+      "title": "数组的转换",
+      "frontmatter": {
+        "title": "数组的转换",
+        "date": "2019-08-13",
+        "permalink": "/passages/array-switch",
+        "commentid": "array-switch"
+      },
+      "regularPath": "/ES6/%E6%95%B0%E7%BB%84/4,%E6%95%B0%E7%BB%84%E7%9A%84%E8%BD%AC%E6%8D%A2.html",
+      "relativePath": "ES6/数组/4,数组的转换.md",
+      "key": "v-0793c4c2",
+      "path": "/passages/array-switch/",
+      "headers": [
+        {
+          "level": 2,
+          "title": "数组转字符串",
+          "slug": "数组转字符串"
+        },
+        {
+          "level": 2,
+          "title": "字符串转数组",
+          "slug": "字符串转数组"
+        },
+        {
+          "level": 2,
+          "title": "对象转化为数组",
+          "slug": "对象转化为数组"
+        },
+        {
+          "level": 3,
+          "title": "Object.keys()",
+          "slug": "object-keys"
+        }
+      ],
+      "lastUpdated": "2019-8-15 18:13:36"
+    },
+    {
       "title": "数组的创建",
       "frontmatter": {
         "title": "数组的创建",
@@ -325,7 +371,7 @@ export const siteData = {
       },
       "regularPath": "/ES6/%E6%95%B0%E7%BB%84/1,%E6%95%B0%E7%BB%84%E7%9A%84%E5%88%9B%E5%BB%BA.html",
       "relativePath": "ES6/数组/1,数组的创建.md",
-      "key": "v-1e8eebc4",
+      "key": "v-d247372e",
       "path": "/passages/array/",
       "headers": [
         {
@@ -339,7 +385,7 @@ export const siteData = {
           "slug": "创建数组"
         }
       ],
-      "lastUpdated": "2020-6-4 09:47:29"
+      "lastUpdated": "2020-6-4 9:47:29"
     },
     {
       "title": "数组的循环",
@@ -351,7 +397,7 @@ export const siteData = {
       },
       "regularPath": "/ES6/%E6%95%B0%E7%BB%84/2,%E6%95%B0%E7%BB%84%E7%9A%84%E5%BE%AA%E7%8E%AF.html",
       "relativePath": "ES6/数组/2,数组的循环.md",
-      "key": "v-481b5d96",
+      "key": "v-543fc9da",
       "path": "/passages/array-for/",
       "headers": [
         {
@@ -390,7 +436,7 @@ export const siteData = {
           "slug": "find"
         }
       ],
-      "lastUpdated": "2019-12-2 14:03:52"
+      "lastUpdated": "2020-7-2 17:20:32"
     },
     {
       "title": "数组的操作",
@@ -402,7 +448,7 @@ export const siteData = {
       },
       "regularPath": "/ES6/%E6%95%B0%E7%BB%84/3,%E6%95%B0%E7%BB%84%E7%9A%84%E6%93%8D%E4%BD%9C.html",
       "relativePath": "ES6/数组/3,数组的操作.md",
-      "key": "v-ff19689c",
+      "key": "v-0e7e7752",
       "path": "/passages/array-operation/",
       "headers": [
         {
@@ -461,7 +507,140 @@ export const siteData = {
           "slug": "find"
         }
       ],
-      "lastUpdated": "2020-6-4 09:47:29"
+      "lastUpdated": "2020-6-4 9:47:29"
+    },
+    {
+      "title": "Home",
+      "frontmatter": {
+        "home": true,
+        "heroImage": "./flower.jpg",
+        "heroText": "一腔诗意",
+        "tagline": "种一棵树最好的时间是十年前，其次就是现在。",
+        "actionText": "进入导航 →",
+        "actionLink": "/passages/javascript-datatype/",
+        "footer": "MIT Licensed | Copyright © 2019 一腔诗意"
+      },
+      "regularPath": "/",
+      "relativePath": "README.md",
+      "key": "v-1d036ca0",
+      "path": "/",
+      "lastUpdated": "2019-12-3 10:20:41"
+    },
+    {
+      "title": "ssh秘钥的生成",
+      "frontmatter": {
+        "title": "ssh秘钥的生成",
+        "date": "2019-08-09",
+        "permalink": "/passages/ssh_key_create",
+        "commentid": "ssh_key_create"
+      },
+      "regularPath": "/Git%E5%AE%9E%E6%88%98%E6%89%8B%E5%86%8C/1,ssh%E7%A7%98%E9%92%A5%E7%94%9F%E6%88%90.html",
+      "relativePath": "Git实战手册/1,ssh秘钥生成.md",
+      "key": "v-5ac5ad34",
+      "path": "/passages/ssh_key_create/",
+      "headers": [
+        {
+          "level": 2,
+          "title": "1.检查是否存在SSH秘钥",
+          "slug": "_1-检查是否存在ssh秘钥"
+        },
+        {
+          "level": 2,
+          "title": "2.运行命令生成SSH秘钥",
+          "slug": "_2-运行命令生成ssh秘钥"
+        },
+        {
+          "level": 2,
+          "title": "linux信任秘钥的修改",
+          "slug": "linux信任秘钥的修改"
+        }
+      ],
+      "lastUpdated": "2019-8-27 19:59:40"
+    },
+    {
+      "title": "React相关",
+      "frontmatter": {
+        "title": "React相关",
+        "date": "2020-06-04",
+        "permalink": "/passages/React",
+        "commentid": "React"
+      },
+      "regularPath": "/React/reactJs%E5%9F%BA%E7%A1%80/React.html",
+      "relativePath": "React/reactJs基础/React.md",
+      "key": "v-23296562",
+      "path": "/passages/React/"
+    },
+    {
+      "title": "git中tag的使用",
+      "frontmatter": {
+        "title": "git中tag的使用",
+        "date": "2019-08-12",
+        "permalink": "/passages/git_tag",
+        "commentid": "git_tag"
+      },
+      "regularPath": "/Git%E5%AE%9E%E6%88%98%E6%89%8B%E5%86%8C/3,git%E4%B8%ADtag%E7%9A%84%E4%BD%BF%E7%94%A8.html",
+      "relativePath": "Git实战手册/3,git中tag的使用.md",
+      "key": "v-4309a9b9",
+      "path": "/passages/git_tag/",
+      "headers": [
+        {
+          "level": 2,
+          "title": "tag标签的常用操作",
+          "slug": "tag标签的常用操作"
+        },
+        {
+          "level": 2,
+          "title": "操作标签",
+          "slug": "操作标签"
+        },
+        {
+          "level": 2,
+          "title": "根据tag回退版本修改bug",
+          "slug": "根据tag回退版本修改bug"
+        }
+      ],
+      "lastUpdated": "2019-8-23 19:23:35"
+    },
+    {
+      "title": "git常用操作",
+      "frontmatter": {
+        "title": "git常用操作",
+        "date": "2019-08-12",
+        "permalink": "/passages/git_steps",
+        "commentid": "git_steps"
+      },
+      "regularPath": "/Git%E5%AE%9E%E6%88%98%E6%89%8B%E5%86%8C/2,git%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C.html",
+      "relativePath": "Git实战手册/2,git常用操作.md",
+      "key": "v-f331410a",
+      "path": "/passages/git_steps/",
+      "headers": [
+        {
+          "level": 2,
+          "title": "Git回滚到某个commit",
+          "slug": "git回滚到某个commit"
+        },
+        {
+          "level": 2,
+          "title": "拉取远程分支到本地",
+          "slug": "拉取远程分支到本地"
+        },
+        {
+          "level": 2,
+          "title": "git本地文件夹的删除和添加",
+          "slug": "git本地文件夹的删除和添加"
+        },
+        {
+          "level": 2,
+          "title": "git删除远程仓库的文件",
+          "slug": "git删除远程仓库的文件"
+        },
+        {
+          "level": 2,
+          "title": "branch基本操作",
+          "slug": "branch基本操作"
+        }
+      ],
+      "lastUpdated": "2019-8-23 19:23:35"
     },
     {
       "title": "数组的工具类",
@@ -473,7 +652,7 @@ export const siteData = {
       },
       "regularPath": "/ES6/%E6%95%B0%E7%BB%84/5,%E6%95%B0%E7%BB%84%E7%9A%84%E5%B7%A5%E5%85%B7%E7%B1%BB.html",
       "relativePath": "ES6/数组/5,数组的工具类.md",
-      "key": "v-7c3a0f92",
+      "key": "v-2921a69c",
       "path": "/passages/array-tools/",
       "headers": [
         {
@@ -547,203 +726,7 @@ export const siteData = {
           "slug": "table对象对比"
         }
       ],
-      "lastUpdated": "2019-8-15 18:13:36"
-    },
-    {
-      "title": "数组的转换",
-      "frontmatter": {
-        "title": "数组的转换",
-        "date": "2019-08-13",
-        "permalink": "/passages/array-switch",
-        "commentid": "array-switch"
-      },
-      "regularPath": "/ES6/%E6%95%B0%E7%BB%84/4,%E6%95%B0%E7%BB%84%E7%9A%84%E8%BD%AC%E6%8D%A2.html",
-      "relativePath": "ES6/数组/4,数组的转换.md",
-      "key": "v-f82eb60c",
-      "path": "/passages/array-switch/",
-      "headers": [
-        {
-          "level": 2,
-          "title": "数组转字符串",
-          "slug": "数组转字符串"
-        },
-        {
-          "level": 2,
-          "title": "字符串转数组",
-          "slug": "字符串转数组"
-        },
-        {
-          "level": 2,
-          "title": "对象转化为数组",
-          "slug": "对象转化为数组"
-        },
-        {
-          "level": 3,
-          "title": "Object.keys()",
-          "slug": "object-keys"
-        }
-      ],
-      "lastUpdated": "2019-8-15 18:13:36"
-    },
-    {
-      "title": "git常用操作",
-      "frontmatter": {
-        "title": "git常用操作",
-        "date": "2019-08-12",
-        "permalink": "/passages/git_steps",
-        "commentid": "git_steps"
-      },
-      "regularPath": "/Git%E5%AE%9E%E6%88%98%E6%89%8B%E5%86%8C/2,git%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C.html",
-      "relativePath": "Git实战手册/2,git常用操作.md",
-      "key": "v-54a06b96",
-      "path": "/passages/git_steps/",
-      "headers": [
-        {
-          "level": 2,
-          "title": "Git回滚到某个commit",
-          "slug": "git回滚到某个commit"
-        },
-        {
-          "level": 2,
-          "title": "拉取远程分支到本地",
-          "slug": "拉取远程分支到本地"
-        },
-        {
-          "level": 2,
-          "title": "git本地文件夹的删除和添加",
-          "slug": "git本地文件夹的删除和添加"
-        },
-        {
-          "level": 2,
-          "title": "git删除远程仓库的文件",
-          "slug": "git删除远程仓库的文件"
-        },
-        {
-          "level": 2,
-          "title": "branch基本操作",
-          "slug": "branch基本操作"
-        }
-      ],
-      "lastUpdated": "2019-8-23 19:23:35"
-    },
-    {
-      "title": "git中tag的使用",
-      "frontmatter": {
-        "title": "git中tag的使用",
-        "date": "2019-08-12",
-        "permalink": "/passages/git_tag",
-        "commentid": "git_tag"
-      },
-      "regularPath": "/Git%E5%AE%9E%E6%88%98%E6%89%8B%E5%86%8C/3,git%E4%B8%ADtag%E7%9A%84%E4%BD%BF%E7%94%A8.html",
-      "relativePath": "Git实战手册/3,git中tag的使用.md",
-      "key": "v-2191f594",
-      "path": "/passages/git_tag/",
-      "headers": [
-        {
-          "level": 2,
-          "title": "tag标签的常用操作",
-          "slug": "tag标签的常用操作"
-        },
-        {
-          "level": 2,
-          "title": "操作标签",
-          "slug": "操作标签"
-        },
-        {
-          "level": 2,
-          "title": "根据tag回退版本修改bug",
-          "slug": "根据tag回退版本修改bug"
-        }
-      ],
-      "lastUpdated": "2019-8-23 19:23:35"
-    },
-    {
-      "title": "ssh秘钥的生成",
-      "frontmatter": {
-        "title": "ssh秘钥的生成",
-        "date": "2019-08-09",
-        "permalink": "/passages/ssh_key_create",
-        "commentid": "ssh_key_create"
-      },
-      "regularPath": "/Git%E5%AE%9E%E6%88%98%E6%89%8B%E5%86%8C/1,ssh%E7%A7%98%E9%92%A5%E7%94%9F%E6%88%90.html",
-      "relativePath": "Git实战手册/1,ssh秘钥生成.md",
-      "key": "v-28feb94f",
-      "path": "/passages/ssh_key_create/",
-      "headers": [
-        {
-          "level": 2,
-          "title": "1.检查是否存在SSH秘钥",
-          "slug": "_1-检查是否存在ssh秘钥"
-        },
-        {
-          "level": 2,
-          "title": "2.运行命令生成SSH秘钥",
-          "slug": "_2-运行命令生成ssh秘钥"
-        },
-        {
-          "level": 2,
-          "title": "linux信任秘钥的修改",
-          "slug": "linux信任秘钥的修改"
-        }
-      ],
-      "lastUpdated": "2019-8-27 19:59:40"
-    },
-    {
-      "title": "Home",
-      "frontmatter": {
-        "home": true,
-        "heroImage": "./flower.jpg",
-        "heroText": "一腔诗意",
-        "tagline": "种一棵树最好的时间是十年前，其次就是现在。",
-        "actionText": "进入导航 →",
-        "actionLink": "/passages/javascript-datatype/",
-        "footer": "MIT Licensed | Copyright © 2019 一腔诗意"
-      },
-      "regularPath": "/",
-      "relativePath": "README.md",
-      "key": "v-2d8ced25",
-      "path": "/",
-      "lastUpdated": "2019-12-3 10:20:41"
-    },
-    {
-      "title": "React相关",
-      "frontmatter": {
-        "title": "React相关",
-        "date": "2020-06-04",
-        "permalink": "/passages/React",
-        "commentid": "React"
-      },
-      "regularPath": "/React/React.html",
-      "relativePath": "React/React.md",
-      "key": "v-2b75e42e",
-      "path": "/passages/React/",
-      "lastUpdated": "2020-6-4 10:21:44"
-    },
-    {
-      "title": "VUE相关",
-      "frontmatter": {
-        "title": "VUE相关",
-        "date": "2020-06-04",
-        "permalink": "/passages/VUE",
-        "commentid": "VUE"
-      },
-      "regularPath": "/VUE/VUE.html",
-      "relativePath": "VUE/VUE.md",
-      "key": "v-b7e7d72e",
-      "path": "/passages/VUE/",
-      "headers": [
-        {
-          "level": 2,
-          "title": "VUE的精髓——组件",
-          "slug": "vue的精髓-组件"
-        },
-        {
-          "level": 2,
-          "title": "组件的分类",
-          "slug": "组件的分类"
-        }
-      ],
-      "lastUpdated": "2020-6-4 10:21:44"
+      "lastUpdated": "2020-7-2 17:20:32"
     },
     {
       "title": "npm相关",
@@ -755,7 +738,7 @@ export const siteData = {
       },
       "regularPath": "/nodeJS/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/npm%E7%9B%B8%E5%85%B3.html",
       "relativePath": "nodeJS/基础知识/npm相关.md",
-      "key": "v-a8fc99f0",
+      "key": "v-0ca1de26",
       "path": "/passages/npm/",
       "headers": [
         {
@@ -782,6 +765,31 @@ export const siteData = {
       "lastUpdated": "2020-6-4 10:01:00"
     },
     {
+      "title": "VUE相关",
+      "frontmatter": {
+        "title": "VUE相关",
+        "date": "2020-06-04",
+        "permalink": "/passages/VUE",
+        "commentid": "VUE"
+      },
+      "regularPath": "/VUE/vue%E5%9F%BA%E7%A1%80/VUE.html",
+      "relativePath": "VUE/vue基础/VUE.md",
+      "key": "v-98ede362",
+      "path": "/passages/VUE/",
+      "headers": [
+        {
+          "level": 2,
+          "title": "VUE的精髓——组件",
+          "slug": "vue的精髓-组件"
+        },
+        {
+          "level": 2,
+          "title": "组件的分类",
+          "slug": "组件的分类"
+        }
+      ]
+    },
+    {
       "title": "nginx",
       "frontmatter": {
         "title": "nginx",
@@ -791,7 +799,7 @@ export const siteData = {
       },
       "regularPath": "/%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%9B%B8%E5%85%B3/nginx/nginx.html",
       "relativePath": "服务器相关/nginx/nginx.md",
-      "key": "v-2a851744",
+      "key": "v-6fe58743",
       "path": "/passages/nginx/",
       "headers": [
         {
@@ -921,7 +929,7 @@ export const siteData = {
         {
           "title": "VUE",
           "children": [
-            "VUE/VUE"
+            "vue基础/VUE"
           ],
           "collapsable": true,
           "sidebarDepth": 3
@@ -931,7 +939,7 @@ export const siteData = {
         {
           "title": "React",
           "children": [
-            "React/React"
+            "reactJs基础/React"
           ],
           "collapsable": true,
           "sidebarDepth": 3

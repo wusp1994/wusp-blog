@@ -71,3 +71,13 @@ async function readByAsync(){
 readByAsync();
 ```
 对比 回调和 promise 更为简便
+
+## 使用await阻塞循环
+
+https://www.php.cn/js-tutorial-465033.html
+
+> 先说结论，当使用await时，希望JavaScript暂停执行，直到等待 promise 返回处理结果。这意味着for循环中的await 应该按顺序执行。
+>
+> 这种行为适用于大多数循环(比如while和for-of循环)…但是它不能处理需要回调的循环，如forEach、map、filter和reduce。
+
+### 在接下来的几节中，我们将研究await 如何影响forEach、map和filter。

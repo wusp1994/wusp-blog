@@ -22,10 +22,10 @@ module.exports = {
         tools.getSidebar('基础知识', tools.formatSidebarChildren(tools.docsPath + "/nodeJS/基础知识"), true),
     ],
     "/VUE/": [
-        tools.getSidebar('VUE', tools.formatSidebarChildren(tools.docsPath + "/VUE"), true),
+        tools.getSidebar('VUE', tools.formatSidebarChildren(tools.docsPath + "/VUE/vue基础"), true),
     ],
     "/React/": [
-        tools.getSidebar('React', tools.formatSidebarChildren(tools.docsPath + "/React"), true),
+        tools.getSidebar('React', tools.formatSidebarChildren(tools.docsPath + "/React/reactJs基础"), true),
     ],
     // 一定要放在最后！！！
     // 根目录下的 sidebar, 对于所有未匹配到的都会应用该 sidebar

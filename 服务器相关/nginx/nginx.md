@@ -3,7 +3,7 @@ title: "nginx"
 date: "2019-09-02"
 permalink: "nginx"
 ---
-## nginx操作
+##  linux操作nginx
 ### 定位nginx
 服务器上有多个nginx,定位当前正在运行的Nginx的配置文件
 ```sh
@@ -43,6 +43,117 @@ home/odin/nginx/sbin/nginx -s reload #修改配置后重新加载生效
   kill -TERM 16391 #快速停止Nginx：
   kill -9 16391 #强制停止Nginx：
 ```
+
+## nginx配置
+
+### 多域名不同项目
+
+> d.ptbchina.com 和 image.ptbchina.com都配置到这台服务器的ip
+
+```shell
+server {
+        listen       80;
+        server_name  d.ptbchina.com;
+		index index.html index.htm index.php;
+		root  /root/Code/ptb-uni-app/h5;
+
+		#error_page   404   /404.html;
+        include enable-php.conf;
+
+        location ~ .*\.(gif|jpg|jpeg|png|bmp|swf)$
+        {
+            expires      30d;
+        }
+
+        location ~ .*\.(js|css)?$
+        {
+            expires      12h;
+        }
+
+        location ~ /\.
+        {
+            deny all;
+        }
+
+    }
+    
+    server {
+        listen       80;
+        server_name  image.ptbchina.com;
+		index index.html index.htm index.php;
+		root  /root/Code/ptb-photo-uni/h5;
+
+		#error_page   404   /404.html;
+        include enable-php.conf;
+
+  		location /api {
+             proxy_pass http://api.paotuanbang.cn/;
+             index  index.html index.htm index.jsp;
+        }
+
+		location @router 
+        {
+          rewrite ^.*$ /index.html last;
+        }
+
+        location ~ .*\.(gif|jpg|jpeg|png|bmp|swf)$
+        {
+            expires      30d;
+        }
+
+        location ~ .*\.(js|css)?$
+        {
+            expires      12h;
+        }
+
+        location ~ /\.
+        {
+            deny all;
+        }
+
+    }
+
+```
+
+### 链接转发重定向
+
+```shell
+       	#处理微信支付跳转连接不能匹配 #
+		location /detail {
+			rewrite ^/detail(.*)  /#/pages/online-running/detail/activity-detail permanent;
+		}
+		
+		#处理微信支付跳转连接不能匹配 #
+		location /my {
+			rewrite ^/my(.*)  /#/pages/personal-center/personal-center permanent;
+		}
+
+```
+
+### 反向代理
+
+```sh
+  		location /api {
+             proxy_pass http://api.paotuanbang.cn/;
+             index  index.html index.htm index.jsp;
+        }
+
+		#所有地址反向代理到 http://127.0.0.1:8080
+        location /uploadApi {
+             proxy_pass https://m.ptbchina.com/index.php/;
+             index  index.html index.htm index.jsp;
+        }
+```
+
+### vue hash路由地址栏访问404问题
+
+```shell
+		location @router {
+          rewrite ^.*$ /index.html last;
+        }
+```
+
+
 
 ## linux 下常用命令
 

@@ -4,16 +4,16 @@
 
 import { injectComponentOption, ensureAsyncComponentsLoaded } from '@app/util'
 import rootMixins from '@internal/root-mixins'
-import GlobalLayout from "E:\\wushaopengCode\\博客\\wusp-blog\\node_modules\\@vuepress\\core\\lib\\client\\components\\GlobalLayout.vue"
+import GlobalLayout from "D:\\WuWorkSpace\\code\\Blog\\wusp-blog\\node_modules\\@vuepress\\core\\lib\\client\\components\\GlobalLayout.vue"
 
 injectComponentOption(GlobalLayout, 'mixins', rootMixins)
 export const routes = [
   {
-    name: "v-aad5aab0",
+    name: "v-45670e0d",
     path: "/passages/async function/",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-aad5aab0").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-45670e0d").then(next)
     },
   },
   {
@@ -25,27 +25,11 @@ export const routes = [
     redirect: "/passages/async function/"
   },
   {
-    name: "v-769e37f0",
-    path: "/passages/generator/",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-769e37f0").then(next)
-    },
-  },
-  {
-    path: "/passages/generator/index.html",
-    redirect: "/passages/generator/"
-  },
-  {
-    path: "/ES6/ES6%E7%9A%84%E9%87%8D%E9%9A%BE%E7%82%B9/generator%E5%87%BD%E6%95%B0.html",
-    redirect: "/passages/generator/"
-  },
-  {
-    name: "v-cf255942",
+    name: "v-7446e204",
     path: "/passages/Promise/",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-cf255942").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-7446e204").then(next)
     },
   },
   {
@@ -57,43 +41,11 @@ export const routes = [
     redirect: "/passages/Promise/"
   },
   {
-    name: "v-145cfea4",
-    path: "/passages/object-create/",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-145cfea4").then(next)
-    },
-  },
-  {
-    path: "/passages/object-create/index.html",
-    redirect: "/passages/object-create/"
-  },
-  {
-    path: "/ES6/%E5%AF%B9%E8%B1%A1/1,%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%88%9B%E5%BB%BA.html",
-    redirect: "/passages/object-create/"
-  },
-  {
-    name: "v-d1e31628",
-    path: "/passages/function-create/",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-d1e31628").then(next)
-    },
-  },
-  {
-    path: "/passages/function-create/index.html",
-    redirect: "/passages/function-create/"
-  },
-  {
-    path: "/ES6/%E5%87%BD%E6%95%B0/1%EF%BC%8C%E5%87%BD%E6%95%B0%E7%9A%84%E5%A3%B0%E6%98%8E.html",
-    redirect: "/passages/function-create/"
-  },
-  {
-    name: "v-02c78194",
+    name: "v-7b14fa39",
     path: "/passages/object-operation/",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-02c78194").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-7b14fa39").then(next)
     },
   },
   {
@@ -105,11 +57,27 @@ export const routes = [
     redirect: "/passages/object-operation/"
   },
   {
-    name: "v-063cdadc",
+    name: "v-2bef926d",
+    path: "/passages/generator/",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-2bef926d").then(next)
+    },
+  },
+  {
+    path: "/passages/generator/index.html",
+    redirect: "/passages/generator/"
+  },
+  {
+    path: "/ES6/ES6%E7%9A%84%E9%87%8D%E9%9A%BE%E7%82%B9/generator%E5%87%BD%E6%95%B0.html",
+    redirect: "/passages/generator/"
+  },
+  {
+    name: "v-7e8a5381",
     path: "/passages/object-switch/",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-063cdadc").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-7e8a5381").then(next)
     },
   },
   {
@@ -121,11 +89,27 @@ export const routes = [
     redirect: "/passages/object-switch/"
   },
   {
-    name: "v-6da5682a",
+    name: "v-e6ab116e",
+    path: "/passages/object-create/",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-e6ab116e").then(next)
+    },
+  },
+  {
+    path: "/passages/object-create/index.html",
+    redirect: "/passages/object-create/"
+  },
+  {
+    path: "/ES6/%E5%AF%B9%E8%B1%A1/1,%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%88%9B%E5%BB%BA.html",
+    redirect: "/passages/object-create/"
+  },
+  {
+    name: "v-5c5f4960",
     path: "/passages/javascript-dataType/",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-6da5682a").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-5c5f4960").then(next)
     },
   },
   {
@@ -137,75 +121,27 @@ export const routes = [
     redirect: "/passages/javascript-dataType/"
   },
   {
-    name: "v-1e8eebc4",
-    path: "/passages/array/",
+    name: "v-167f7891",
+    path: "/passages/function-create/",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-1e8eebc4").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-167f7891").then(next)
     },
   },
   {
-    path: "/passages/array/index.html",
-    redirect: "/passages/array/"
+    path: "/passages/function-create/index.html",
+    redirect: "/passages/function-create/"
   },
   {
-    path: "/ES6/%E6%95%B0%E7%BB%84/1,%E6%95%B0%E7%BB%84%E7%9A%84%E5%88%9B%E5%BB%BA.html",
-    redirect: "/passages/array/"
+    path: "/ES6/%E5%87%BD%E6%95%B0/1%EF%BC%8C%E5%87%BD%E6%95%B0%E7%9A%84%E5%A3%B0%E6%98%8E.html",
+    redirect: "/passages/function-create/"
   },
   {
-    name: "v-481b5d96",
-    path: "/passages/array-for/",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-481b5d96").then(next)
-    },
-  },
-  {
-    path: "/passages/array-for/index.html",
-    redirect: "/passages/array-for/"
-  },
-  {
-    path: "/ES6/%E6%95%B0%E7%BB%84/2,%E6%95%B0%E7%BB%84%E7%9A%84%E5%BE%AA%E7%8E%AF.html",
-    redirect: "/passages/array-for/"
-  },
-  {
-    name: "v-ff19689c",
-    path: "/passages/array-operation/",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-ff19689c").then(next)
-    },
-  },
-  {
-    path: "/passages/array-operation/index.html",
-    redirect: "/passages/array-operation/"
-  },
-  {
-    path: "/ES6/%E6%95%B0%E7%BB%84/3,%E6%95%B0%E7%BB%84%E7%9A%84%E6%93%8D%E4%BD%9C.html",
-    redirect: "/passages/array-operation/"
-  },
-  {
-    name: "v-7c3a0f92",
-    path: "/passages/array-tools/",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-7c3a0f92").then(next)
-    },
-  },
-  {
-    path: "/passages/array-tools/index.html",
-    redirect: "/passages/array-tools/"
-  },
-  {
-    path: "/ES6/%E6%95%B0%E7%BB%84/5,%E6%95%B0%E7%BB%84%E7%9A%84%E5%B7%A5%E5%85%B7%E7%B1%BB.html",
-    redirect: "/passages/array-tools/"
-  },
-  {
-    name: "v-f82eb60c",
+    name: "v-0793c4c2",
     path: "/passages/array-switch/",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-f82eb60c").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-0793c4c2").then(next)
     },
   },
   {
@@ -217,43 +153,71 @@ export const routes = [
     redirect: "/passages/array-switch/"
   },
   {
-    name: "v-54a06b96",
-    path: "/passages/git_steps/",
+    name: "v-d247372e",
+    path: "/passages/array/",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-54a06b96").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-d247372e").then(next)
     },
   },
   {
-    path: "/passages/git_steps/index.html",
-    redirect: "/passages/git_steps/"
+    path: "/passages/array/index.html",
+    redirect: "/passages/array/"
   },
   {
-    path: "/Git%E5%AE%9E%E6%88%98%E6%89%8B%E5%86%8C/2,git%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C.html",
-    redirect: "/passages/git_steps/"
+    path: "/ES6/%E6%95%B0%E7%BB%84/1,%E6%95%B0%E7%BB%84%E7%9A%84%E5%88%9B%E5%BB%BA.html",
+    redirect: "/passages/array/"
   },
   {
-    name: "v-2191f594",
-    path: "/passages/git_tag/",
+    name: "v-543fc9da",
+    path: "/passages/array-for/",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-2191f594").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-543fc9da").then(next)
     },
   },
   {
-    path: "/passages/git_tag/index.html",
-    redirect: "/passages/git_tag/"
+    path: "/passages/array-for/index.html",
+    redirect: "/passages/array-for/"
   },
   {
-    path: "/Git%E5%AE%9E%E6%88%98%E6%89%8B%E5%86%8C/3,git%E4%B8%ADtag%E7%9A%84%E4%BD%BF%E7%94%A8.html",
-    redirect: "/passages/git_tag/"
+    path: "/ES6/%E6%95%B0%E7%BB%84/2,%E6%95%B0%E7%BB%84%E7%9A%84%E5%BE%AA%E7%8E%AF.html",
+    redirect: "/passages/array-for/"
   },
   {
-    name: "v-28feb94f",
+    name: "v-0e7e7752",
+    path: "/passages/array-operation/",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-0e7e7752").then(next)
+    },
+  },
+  {
+    path: "/passages/array-operation/index.html",
+    redirect: "/passages/array-operation/"
+  },
+  {
+    path: "/ES6/%E6%95%B0%E7%BB%84/3,%E6%95%B0%E7%BB%84%E7%9A%84%E6%93%8D%E4%BD%9C.html",
+    redirect: "/passages/array-operation/"
+  },
+  {
+    name: "v-1d036ca0",
+    path: "/",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-1d036ca0").then(next)
+    },
+  },
+  {
+    path: "/index.html",
+    redirect: "/"
+  },
+  {
+    name: "v-5ac5ad34",
     path: "/passages/ssh_key_create/",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-28feb94f").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-5ac5ad34").then(next)
     },
   },
   {
@@ -265,23 +229,11 @@ export const routes = [
     redirect: "/passages/ssh_key_create/"
   },
   {
-    name: "v-2d8ced25",
-    path: "/",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-2d8ced25").then(next)
-    },
-  },
-  {
-    path: "/index.html",
-    redirect: "/"
-  },
-  {
-    name: "v-2b75e42e",
+    name: "v-23296562",
     path: "/passages/React/",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-2b75e42e").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-23296562").then(next)
     },
   },
   {
@@ -289,31 +241,63 @@ export const routes = [
     redirect: "/passages/React/"
   },
   {
-    path: "/React/React.html",
+    path: "/React/reactJs%E5%9F%BA%E7%A1%80/React.html",
     redirect: "/passages/React/"
   },
   {
-    name: "v-b7e7d72e",
-    path: "/passages/VUE/",
+    name: "v-4309a9b9",
+    path: "/passages/git_tag/",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-b7e7d72e").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-4309a9b9").then(next)
     },
   },
   {
-    path: "/passages/VUE/index.html",
-    redirect: "/passages/VUE/"
+    path: "/passages/git_tag/index.html",
+    redirect: "/passages/git_tag/"
   },
   {
-    path: "/VUE/VUE.html",
-    redirect: "/passages/VUE/"
+    path: "/Git%E5%AE%9E%E6%88%98%E6%89%8B%E5%86%8C/3,git%E4%B8%ADtag%E7%9A%84%E4%BD%BF%E7%94%A8.html",
+    redirect: "/passages/git_tag/"
   },
   {
-    name: "v-a8fc99f0",
+    name: "v-f331410a",
+    path: "/passages/git_steps/",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-f331410a").then(next)
+    },
+  },
+  {
+    path: "/passages/git_steps/index.html",
+    redirect: "/passages/git_steps/"
+  },
+  {
+    path: "/Git%E5%AE%9E%E6%88%98%E6%89%8B%E5%86%8C/2,git%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C.html",
+    redirect: "/passages/git_steps/"
+  },
+  {
+    name: "v-2921a69c",
+    path: "/passages/array-tools/",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-2921a69c").then(next)
+    },
+  },
+  {
+    path: "/passages/array-tools/index.html",
+    redirect: "/passages/array-tools/"
+  },
+  {
+    path: "/ES6/%E6%95%B0%E7%BB%84/5,%E6%95%B0%E7%BB%84%E7%9A%84%E5%B7%A5%E5%85%B7%E7%B1%BB.html",
+    redirect: "/passages/array-tools/"
+  },
+  {
+    name: "v-0ca1de26",
     path: "/passages/npm/",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-a8fc99f0").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-0ca1de26").then(next)
     },
   },
   {
@@ -325,11 +309,27 @@ export const routes = [
     redirect: "/passages/npm/"
   },
   {
-    name: "v-2a851744",
+    name: "v-98ede362",
+    path: "/passages/VUE/",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-98ede362").then(next)
+    },
+  },
+  {
+    path: "/passages/VUE/index.html",
+    redirect: "/passages/VUE/"
+  },
+  {
+    path: "/VUE/vue%E5%9F%BA%E7%A1%80/VUE.html",
+    redirect: "/passages/VUE/"
+  },
+  {
+    name: "v-6fe58743",
     path: "/passages/nginx/",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-2a851744").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-6fe58743").then(next)
     },
   },
   {

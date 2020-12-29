@@ -1,2 +1,2 @@
-import "E:\\wushaopengCode\\博客\\wusp-blog\\node_modules\\@vuepress\\core\\lib\\node\\internal-plugins\\style\\client.js"
+import "D:\\WuWorkSpace\\code\\Blog\\wusp-blog\\node_modules\\@vuepress\\core\\lib\\node\\internal-plugins\\style\\client.js"
 export default {}
